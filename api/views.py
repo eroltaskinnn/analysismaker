@@ -18,7 +18,7 @@ class ConversionRateView(APIView):
             A Response object containing the highest and lowest conversion rates.
         """
 
-        file_operation = FileOperation("/home/erol/Downloads/mockupinterviewdata.csv")
+        file_operation = FileOperation("example.csv")
         data = file_operation.read_data()
 
         conversion_rate = ConversionRateCalculator(data)
@@ -48,7 +48,7 @@ class StatusBasedCalculatorView(APIView):
         Returns:
             A Response object containing the result of the revenue conversion calculation.
         """
-        file_operation = FileOperation("/home/erol/Downloads/mockupinterviewdata.csv")
+        file_operation = FileOperation("example.csv")
         data = file_operation.read_data()
 
         status_calculator = StatusBasedCalculator(data)
@@ -72,7 +72,7 @@ class CategoryTypePerformanceView(APIView):
         Returns:
             A Response object containing the result of the category type performance calculation.
         """
-        file_operation = FileOperation("/home/erol/Downloads/mockupinterviewdata.csv")
+        file_operation = FileOperation("example.csv")
         data = file_operation.read_data()
 
         analysis = CategoryTypePerformance(data)
@@ -91,7 +91,7 @@ class FilterAggregationView(APIView):
         Returns:
             A Response object containing the result of the filter aggregation calculation.
         """
-        file_operation = FileOperation("/home/erol/Downloads/mockupinterviewdata.csv")
+        file_operation = FileOperation("example.csv")
         data = file_operation.read_data()
 
         analysis = FilterAggregation(data)
