@@ -50,7 +50,3 @@ class TestFilterAggregation(unittest.TestCase):
         self.assertListEqual(result.loc[:, 'revenue'].values.tolist(),expected_result.loc[:, 'revenue'].values.tolist())
         self.assertListEqual(result.loc[:, 'conversions'].values.tolist(),expected_result.loc[:, 'conversions'].values.tolist())
 
-
-
-# if __name__ == '__main__':
-#     unittest.main()

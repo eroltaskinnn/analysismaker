@@ -34,6 +34,3 @@ class TestStatusBasedCalculator(unittest.TestCase):
 
         # Assert that the result is equal to the expected result
         pd.testing.assert_frame_equal(result, expected_result)
-
-if __name__ == '__main__':
-    unittest.main()
